@@ -17,8 +17,8 @@ public class TC02AutoComplte {
 		    WebElement from = (WebElement) driver.findElement(By.xpath("//div[@class='auto-complete__value-container auto-complete__value-container--has-value css-1hwfws3']"));
 		   from.click();
 		   from.sendKeys("Red");
-		   from.sendKeys(Keys.ARROW_DOWN);
-		   from.sendKeys(Keys.ENTER);
+		//   from.sendKeys(Keys.ARROW_DOWN);
+		 //  from.sendKeys(Keys.ENTER);
 		 //  from.sendKeys("Green");
 		 //  from.sendKeys(Keys.ARROW_DOWN);
 		  // from.sendKeys(Keys.ENTER);

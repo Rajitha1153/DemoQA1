@@ -29,9 +29,7 @@ public class TC03DatePicker {
         while(!(aMonth.equals("July")&& aYear.equals("2028"))){
         	driver.findElement(By.xpath("//button[@aria-label='Next Month']")).click();
         	aMonth = driver.findElement(By.xpath("//select[@class='react-datepicker__month-select']")).getText();
-            aYear = driver.findElement(By.xpath("//select[@class='react-datepicker__year-select']")).getText();
-            
-        	
+            aYear = driver.findElement(By.xpath("//select[@class='react-datepicker__year-select']")).getText();	
         	
         }
         

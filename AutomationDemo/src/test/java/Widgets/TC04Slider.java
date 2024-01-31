@@ -16,14 +16,14 @@ public class TC04Slider {
 	    ChromeDriver driver = new ChromeDriver();
 	    driver.manage().window().maximize();
 	    driver.get("https://demoqa.com/slider");
-	WebElement slider= (WebElement) driver.findElement(By.xpath("//input[@type='range']"));
+	  driver.findElement(By.xpath("//input[@type='range']")).click();
 
 	   Actions actions= new Actions(driver);
 	   //279,196
-	   actions.clickAndHold(slider).moveByOffset(196,279).release().perform();
-	   slider.click();
+	   actions.clickAndHold().moveByOffset(196,279).release().perform();
 	   
 	   
+	   driver.quit();
 	}
 
 }
