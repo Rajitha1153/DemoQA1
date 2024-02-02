@@ -7,18 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.openqa.selenium.By;
-
-import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.awt.AWTException;
-
 public class TC02Selectable {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -51,7 +39,7 @@ driver.manage().window().maximize();
 		driver.findElement(By.xpath("//li[normalize-space()='Four']")).click();
 		Thread.sleep(2000); 
 		
-		driver.close();
+		driver.quit();
 	
 	}
 

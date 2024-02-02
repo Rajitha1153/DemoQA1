@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserWindows {
+public class TC01BrowserWindows {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
@@ -15,59 +15,7 @@ public class BrowserWindows {
 	    driver.get("https://demoqa.com/browser-windows");
 	    JavascriptExecutor js= (JavascriptExecutor)driver;
 	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    js.executeScript("window.scrollBy(0,300)","");
+	   js.executeScript("window.scrollBy(0,300)","");
 	    
         driver.findElement(By.xpath("//button[@id='messageWindowButton']")).click();
         

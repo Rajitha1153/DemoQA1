@@ -16,12 +16,12 @@ public class TC02Alerts {
 	    driver.get("https://demoqa.com/alerts");
 	    JavascriptExecutor js= (JavascriptExecutor)driver;
 	    js.executeScript("window.scrollBy(0,300)","");
-	    driver.findElement(By.id("promtButton")).click();
+	    driver.findElement(By.id("confirmButton")).click();
 	    Thread.sleep(5000);
-	    Alert alert= driver.switchTo().alert();
-		String AlertText = alert.getText();
-		System.out.println(AlertText);
-		alert.accept();
+	   // Alert alert= driver.switchTo().alert();
+		//String AlertText = alert.getText();
+		//System.out.println(AlertText);
+		//alert.accept();
 	    Thread.sleep(5000);
 	    driver.quit();
 	    
